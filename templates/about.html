@@ -1,0 +1,52 @@
+{% extends '__base__.html' %}
+
+{% block title %}玩在武大{% endblock %}
+{% block beforehead %}
+</script>
+    <link rel="stylesheet" href="/static/css/style_3.css">
+    <link rel="stylesheet" href="/static/css/uikit.gradient.min.css">
+    <link rel="stylesheet" href="/static/css/uikit.almost-flat.min.css">
+    <link rel="stylesheet" href="/static/css/awesome.css" />
+<script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/sha1.min.js"></script>
+    <script src="/static/js/uikit.min.js"></script>
+    <script src="/static/js/vue.min.js"></script>
+    <script src="/static/js/awesome.js"></script>
+    <script src="/static/js/easing.js"></script>
+{% endblock %}
+{% block li_active_about %} active{% endblock %}
+{% block header_h1 %}玩在武大{% endblock %}
+{% block header_h2 %}欢迎来到武汉大学，在这里，也许你会发现不一样的风景{% endblock %}
+{% block content %}
+<div class="content">
+
+     <div class="container">
+         <div class="content-grids">
+             <div class="col-md-8 content-main">
+                 <div class="content-grid">         
+                  {% for blog in blogs %}                
+                     <div class="content-grid-info" id="{{blog.id}}">
+                         <img src="{{blog.image}}" width="669px">
+                         <div class="post-info">
+                         <h4><a target="_blank">{{blog.name}}</a></h4>
+                         <p target="_blank">{{blog.summary}}</p>
+                         </div>
+                     </div>
+                    {% endfor %}
+                 </div>
+              </div>
+
+              <div class="col-md-4 content-right">
+                 <div class="recent categories">
+                     <h3>校园美景</h3>
+                     <ul>
+                      {% for blog in blogs %}  
+                     <li><a href="#{{blog.id}}">{{blog.name}}</a></li>
+                     {% endfor %}
+                     </ul>
+                 </div>
+              </div>
+          </div>
+      </div>
+       {{ pagination('/about?page=', page) }}
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends '__base__.html' %}
+{% block beforehead %}
+<link rel="stylesheet" href="/static/css/style_4.css">
+{% endblock %}
+{% block title %}{{campus_all_img.name}}{% endblock %}
+{% block li_active_campus %}active{% endblock %}
+{% block header_h1 %}{{campus_all_img.name}}{% endblock %}
+{% block header_h2 %}{{campus_all_img.text}}{% endblock %}
+
+{% block content %} 
+<div class="clearfix"></div>
+				<div class="news">
+					<div class="container">
+						<h3>{{campus_all_img.title}}</h3>
+						<div class="new-grids">
+						{% for c in thing_1 %}
+							<div class="col-md-6 new-grid" style="{{c.style}} height: 375px;">
+									<a  class="mask">
+						<img src="{{c.img}}" class="img-responsive zoom-img" alt="" style="height: 375px;"></a>
+						</div>	
+							<div class="col-md-6 new-grid1" style="height: 375px;">
+								<h5></h5>
+								<h4>{{c.title}}</h4>
+								<p>{{c.text}}</p>
+							</div>	
+							<div class="clearfix"></div>
+							{% endfor %}
+							<div class="clearfix"></div>
+						</div>	
+					</div>	
+				</div>	
+{% for c in thing_2 %}
+				<div class="content">
+			<div class="Sharing">
+				<div class="container">
+					<div class="sharing-grids">
+					<div class="col-md-3 sharing-img">
+							<img src="{{c.img}}" class="img-responsive" alt=""/>
+						</div>
+						
+						<div class="col-md-9 sharing-grid">
+							<h2>{{c.title}}</h2>
+							<h4>{{c.text}}</h4>
+							<p></p>
+						</div>
+						<div class="clerafix"></div>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+{% endblock %}

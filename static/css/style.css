@@ -11,8 +11,7 @@
 *
 * ======================================================= */
 body {
-  font-family: Georgia, "Times New Roman", 
-             "Microsoft YaHei", "微软雅黑", 
+  font-family: "Microsoft YaHei", "微软雅黑",
              STXihei, "华文细黑", 
              serif;
   font-weight: 400;
@@ -74,7 +73,6 @@ p {
 
 h1, h2, h3, h4, h5, h6, figure {
   color: #000;
-  font-family: "Droid Sans", Arial, sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
@@ -1237,7 +1235,6 @@ form label {
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
-  font-family: "Droid Sans", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   -webkit-border-radius: 4px;

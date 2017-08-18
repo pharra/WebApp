@@ -5,10 +5,6 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 html, body{
-  font-family: Georgia, "Times New Roman", 
-             "Microsoft YaHei", "微软雅黑", 
-             STXihei, "华文细黑", 
-             serif;
   font-size: 100%;
   background-size:cover;
 }

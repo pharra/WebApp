@@ -37,8 +37,7 @@ ul{
 }
 body{
 	padding:0 0;
-	margin:0 0; 
-	font-family: 'OpenSans-Regular'
+	margin:0 0;
 }
 UNUSED.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
     color: #fff;

@@ -3,9 +3,18 @@
     <link href="/static/css/github-markdown.css" rel="stylesheet"></link>
     <!-- Modernizr JS -->
     <link rel="stylesheet" href="/static/css/code.css">
+
 {% endblock %}
 {% block content %}
-<div class="markdown gtco-container">
+        <style type="text/css">
+    .gtco-cover.gtco-cover-xs {
+    height: 75px;
+}
+        .gtco-cover.gtco-cover-xs .display-t, .gtco-cover.gtco-cover-xs .display-tc {
+    height: 75px;
+}
+    </style>
+<div class="markdown gtco-container" style="padding: 100px 0 15px 0;border-bottom: 1px solid #c7ddef">
     {{ md | safe }}
 </div>
 {% endblock %}

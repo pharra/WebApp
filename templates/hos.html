@@ -1,22 +1,6 @@
 <!DOCTYPE HTML>
 <!--
-{% macro pagination(url, page) %}
-    <ul class="uk-pagination">
-        {% if page.has_previous %}
-            <li><a href="{{ url }}{{ page.page_index - 1 }}"><i class="uk-icon-angle-double-left"></i></a></li>
-            <li><a href="{{ url }}{{ page.page_index - 1 }}"><span>{{ page.page_index -1  }}</span></a></li>
-        {% else %}
-            <li class="uk-disabled"><span><i class="uk-icon-angle-double-left"></i></span></li>
-        {% endif %}
-            <li class="uk-active"><span>{{ page.page_index }}</span></li>
-        {% if page.has_next %}
-        	<li><a href="{{ url }}{{ page.page_index + 1 }}"><span>{{ page.page_index +1  }}</span></a></li>
-            <li><a href="{{ url }}{{ page.page_index + 1 }}"><i class="uk-icon-angle-double-right"></i></a></li>
-        {% else %}
-            <li class="uk-disabled"><span><i class="uk-icon-angle-double-right"></i></span></li>
-        {% endif %}
-    </ul>
-{% endmacro %}
+
 -->
 <html>
 
@@ -24,16 +8,15 @@
     <meta name="google-site-verification" content="6itxMNCnw6xEmODDqBWTzUsmrI-lqGHZQaNlMebIwac" />
     <link rel="shortcut icon" href="/static/favicon.ico" />
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> {% block meta %}
-    <!-- block meta  -->{% endblock %}
-    <title>{% block title %}{% endblock %} - 权益手册</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- block meta  -->
+    <title>医疗 - 权益手册</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Free HTML5 Website Template" />
     <!-- <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet"> -->
 
     <!-- Animate.css -->
-{% block beforehead %}
-    <!-- before head  -->{% endblock %}
+
     <link rel="stylesheet" href="/static/css/animate.css">
     <!-- Icomoon Icon Fonts-->
     <link rel="stylesheet" href="/static/css/icomoon.css">
@@ -58,6 +41,9 @@
     <!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+
+<link rel="stylesheet" href="/static/css/style_4.css">
+
 </head>
 
 <body>
@@ -70,13 +56,10 @@
                 <div class="row">
                     <div class="col-md-12 text-right gtco-contact">
                         <!--	<ul class="">
-					{% if __user__ %}
-						<li><a href="#"><i></i>{{ __user__.name }}</a></li>
-						<li><a href="signout"><i></i>退出</a></li>
-					{% else %}
+
 						<li><a href="signin"><i></i>登陆</a></li>
 						<li><a href="register"><i></i>注册</a></li>
-					{% endif %}
+
 					</ul>
 				-->
                     </div>
@@ -87,10 +70,16 @@
                     </div>
                     <div class="col-xs-8 text-right menu-1">
                         <ul>
-                            <li class={% block li_active_study %}{% endblock %}><a href="/study">学在珞珈</a></li>
-                            <li class={% block li_active_help %}{% endblock %}><a href="/help">新生攻略</a></li>
-                                <li class={% block li_active_dormitory %}{% endblock %}><a href="/dormitory">寝室环境</a></li>
-                                <li class={% block li_active_contact %}{% endblock %}><a href="/contact">全心权益</a></li>
+                            <li class=><a href="/">学在珞珈</a></li>
+                            <li class=><a href="/about">玩在武大</a></li>
+                            <li class="has-dropdown active"><a href="/campus">校园攻略</a>
+                                <ul class="dropdown">
+                                    <li><a href="/campus#1">校园周边</a>
+                                        <li><a href="/campus#2">周边设施</a></li>
+                                </ul>
+                                </li>
+                                <li class=><a href="/dormitory">寝室环境</a></li>
+                                <li class=><a href="/contact">全心权益</a></li>
                         </ul>
                     </div>
                 </div>
@@ -98,16 +87,16 @@
             </div>
         </nav>
 
-        <header id="gtco-header" class="gtco-cover {% block header_height %}gtco-cover-xs{% endblock %}" role="banner" style="background-image: url(/static/images/1.jpg);" ">
+        <header id="gtco-header" class="gtco-cover gtco-cover-xs" role="banner" style="background-image: url(/static/images/1.jpg);" ">
 		<div class="overlay "></div>
 		<div class="gtco-container ">
 			<div class="row ">
 				<div class="col-md-12 col-md-offset-0 text-left ">
 					<div class="display-t ">
 						<div class="display-tc ">
-							<h1 class="animate-box " data-animate-effect="fadeInUp ">{% block header_h1 %}{% endblock %}</h1>
-							<h2 class="animate-box " data-animate-effect="fadeInUp ">{% block header_h2 %}{% endblock %}</h2>
-							{% block index_download %}{% endblock %}
+							<h1 class="animate-box " data-animate-effect="fadeInUp ">医疗</h1>
+							<h2 class="animate-box " data-animate-effect="fadeInUp ">天天刷夜写代码很容易生病的哦，小权权特地为你找到了这些药店，程序猿们要好好照顾自己哦~</h2>
+
 						</div>
 					</div>
 				</div>
@@ -115,7 +104,41 @@
 		</div>
 	</header>
 
-	{% block content %}{% endblock %}
+
+<div class="clearfix"></div>
+				<div class="news">
+					<div class="container">
+						<h3>医生姐姐来了</h3>
+						<div class="new-grids">
+
+							<div class="col-md-6 new-grid" style="float:left; height: 375px;">
+									<a  class="mask">
+						<img src="/static/images/hos_1.jpg" class="img-responsive zoom-img" alt="" style="height: 375px;"></a>
+						</div>
+							<div class="col-md-6 new-grid1" style="height: 375px;">
+								<h5></h5>
+								<h4>校外药店</h4>
+								<p>天成药房（后门左转高架桥下）    万方堂大药房（孵化器大楼一层）</p>
+							</div>
+							<div class="clearfix"></div>
+
+							<div class="col-md-6 new-grid" style="float:right; height: 375px;">
+									<a  class="mask">
+						<img src="/static/images/hos_2.jpg" class="img-responsive zoom-img" alt="" style="height: 375px;"></a>
+						</div>
+							<div class="col-md-6 new-grid1" style="height: 375px;">
+								<h5></h5>
+								<h4>创意城负一层药店</h4>
+								<p>待配图</p>
+							</div>
+							<div class="clearfix"></div>
+
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+
+
 
 	<footer id="gtco-footer " role="contentinfo ">
 		<div class="gtco-container ">
@@ -155,11 +178,11 @@
 			<div class="row copyright ">
 				<div class="col-md-12 ">
 					<p class="pull-left ">
-						<small class="block ">&copy; 2016 国软权益. All Rights Reserved.</small> 
+						<small class="block ">&copy; 2016 国软权益. All Rights Reserved.</small>
 					</p>
 					<p class="pull-right ">
 						<ul class="gtco-social-icons pull-right ">
-					
+
 						</ul>
 					</p>
 				</div>
@@ -172,7 +195,7 @@
 	<div class="gototop js-top ">
 		<a href="# " class="js-gotop "><i class="icon-arrow-up "></i></a>
 	</div>
-	
+
 	<!-- jQuery -->
 	<script src="/static/js/jquery.min.js "></script>
 	<!-- jQuery Easing -->

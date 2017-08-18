@@ -1,0 +1,110 @@
+{% extends '__base__.html' %}
+
+{% block title %}校园周边{% endblock %}
+{% block beforehead %}
+<link rel="stylesheet" href="/static/css/bootstrap.min.css">		
+<link rel="stylesheet" href="/static/fonts/font-awesome.min.css">	
+<link rel="stylesheet" href="/static/css/animate.css">			
+<link rel="stylesheet" href="/static/css/style_2.css">
+{% endblock %}
+{% block li_active_help %}active {% endblock %}
+{% block header_h1 %}新生攻略{% endblock %}
+{% block header_h2 %}我们有一份大礼包送给你{% endblock %}
+
+{% block content %}
+
+<div class="clearfix"></div>
+    <section class="why_choose section-padding" id="2">
+	<div class="container">
+		<div class="row">
+			<div class="section-title text-center wow zoomIn">
+				<h2>服务设施</h2>
+				<div></div>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-12 wow fadeInLeft">
+
+
+
+			<a href="/help/cards">
+				<div class="single_why">
+					<div class="single_why_title"><h4><i class="fa fa-credit-card color-two"></i>新生校园卡</h4></div>
+					<p></p>
+				</div>
+				</a>
+
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-12  wow fadeInUp">
+
+			<a href="/help/truck">
+			<div class="single_why">
+					<div class="single_why_title"><h4><i class="fa fa-truck color-three"></i>快递邮局</h4></div>
+					<p></p>
+				</div>
+				</a>
+
+
+
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-12  wow fadeInRight">
+
+				<a href="/help/run">
+			<div class="single_why">
+					<div class="single_why_title"><h4><i class="fa fa-hand-rock-o color-five"></i>体育设施</h4></div>
+					<p></p>
+				</div>
+				</a>
+
+
+
+			</div>
+		</div>
+	</div>
+</section>
+<section class="feature section-padding" id="1">
+	<div class="container">
+		<div class="row">
+			<div class="section-title text-center wow zoomIn">
+				<h2>生活设施</h2>
+				<div></div>
+			</div>
+
+
+
+
+
+
+					<a href="/help/food">
+			<div class="col-md-3 col-sm-6 col-xs-12 single_about wow fadeInUp">
+				<i class="fa fa-cutlery color-one"></i>
+				<h4>美食</h4>
+				<p></p>
+			</div></a>
+
+			<a href="/help/fun">
+			<div class="col-md-3 col-sm-6 col-xs-12 single_about wow fadeInUp">
+				<i class="fa fa-life-ring color-two"></i>
+				<h4>玩乐</h4>
+				<p></p>
+			</div></a>
+
+			<a href="/help/bus">
+			<div class="col-md-3 col-sm-6 col-xs-12 single_about wow fadeInUp">
+				<i class="fa fa-bus color-three"></i>
+				<h4>交通</h4>
+				<p></p>
+			</div></a>
+
+			<a href="/help/hos">
+			<div class="col-md-3 col-sm-6 col-xs-12 single_about wow fadeInUp">
+				<i class="fa fa-plus-square color-four"></i>
+				<h4>医疗</h4>
+				<p></p>
+			</div></a>
+
+		</div>
+	</div>
+</section>
+
+
+
+{% endblock %}

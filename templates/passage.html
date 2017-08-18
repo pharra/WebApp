@@ -1,0 +1,11 @@
+{% extends '__base__.html' %}
+{% block beforehead %}
+    <link href="/static/css/github-markdown.css" rel="stylesheet"></link>
+    <!-- Modernizr JS -->
+    <link rel="stylesheet" href="/static/css/code.css">
+{% endblock %}
+{% block content %}
+<div class="markdown gtco-container">
+    {{ md | safe }}
+</div>
+{% endblock %}

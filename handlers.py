@@ -67,6 +67,13 @@ def index(request):
         'index': index,
     }
 
+@get('/contact')
+def contact(request):
+    return {
+        '__template__': 'contact.html',
+        'index': contact,
+    }
+
 @get('/help')
 def help(request):
     return {

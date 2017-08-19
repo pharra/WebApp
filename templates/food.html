@@ -1,115 +1,26 @@
-<!DOCTYPE HTML>
-<!--
 
--->
-<html>
+{% extends '__base__.html' %}
 
-<head>
-    <meta name="google-site-verification" content="6itxMNCnw6xEmODDqBWTzUsmrI-lqGHZQaNlMebIwac" />
-    <link rel="shortcut icon" href="/static/favicon.ico" />
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- block meta  -->
-    <title>美食 - 权益手册</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Free HTML5 Website Template" />
-    <!-- <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet"> -->
-
-    <!-- Animate.css -->
-
-    <link rel="stylesheet" href="/static/css/animate.css">
-    <!-- Icomoon Icon Fonts-->
-    <link rel="stylesheet" href="/static/css/icomoon.css">
-    <!-- Themify Icons-->
-    <link rel="stylesheet" href="/static/css/themify-icons.css">
-    <!-- Bootstrap  -->
-    <link rel="stylesheet" href="/static/css/bootstrap.css">
-
-    <!-- Magnific Popup -->
-    <link rel="stylesheet" href="/static/css/magnific-popup.css">
-
-    <!-- Owl Carousel  -->
-    <link rel="stylesheet" href="/static/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="/static/css/owl.theme.default.min.css">
-
-    <!-- Theme style  -->
-    <link rel="stylesheet" href="/static/css/style.css">
-
-    <!-- Modernizr JS -->
-    <script src="/static/js/modernizr-2.6.2.min.js"></script>
-    <!-- FOR IE9 below -->
-    <!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-
+{% block title %}全心权益{% endblock %}
+{% block beforehead %}
 <link rel="stylesheet" href="/static/css/style_4.css">
+    <style type="text/css">
+    .new-grid.col-md-6{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    </style>
+{% endblock %}
+{% block li_active_help %}active {% endblock %}
+{% block header_h1 %}美食{% endblock %}
+{% block header_h2 %}{% endblock %}
 
-</head>
+{% block content %}
 
-<body>
-
-    <div class="gtco-loader"></div>
-
-    <div id="page">
-        <nav class="gtco-nav" role="navigation">
-            <div class="gtco-container">
-                <div class="row">
-                    <div class="col-md-12 text-right gtco-contact">
-                        <!--	<ul class="">
-
-						<li><a href="signin"><i></i>登陆</a></li>
-						<li><a href="register"><i></i>注册</a></li>
-
-					</ul>
-				-->
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4 col-xs-12">
-                        <div id="gtco-logo"><a href="/">权益手册</a></div>
-                    </div>
-                    <div class="col-xs-8 text-right menu-1">
-                        <ul>
-                            <li class=><a href="/">学在珞珈</a></li>
-                            <li class=><a href="/about">玩在武大</a></li>
-                            <li class="has-dropdown active"><a href="/campus">校园攻略</a>
-                                <ul class="dropdown">
-                                    <li><a href="/campus#1">校园周边</a>
-                                        <li><a href="/campus#2">周边设施</a></li>
-                                </ul>
-                                </li>
-                                <li class=><a href="/dormitory">寝室环境</a></li>
-                                <li class=><a href="/contact">全心权益</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </nav>
-
-        <header id="gtco-header" class="gtco-cover gtco-cover-xs" role="banner" style="background-image: url(/static/images/1.jpg);" ">
-		<div class="overlay "></div>
-		<div class="gtco-container ">
-			<div class="row ">
-				<div class="col-md-12 col-md-offset-0 text-left ">
-					<div class="display-t ">
-						<div class="display-tc ">
-							<h1 class="animate-box " data-animate-effect="fadeInUp ">美食</h1>
-							<h2 class="animate-box " data-animate-effect="fadeInUp ">留空</h2>
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
-
-
-<div class="clearfix"></div>
-				<div class="news">
+<div class="news">
 					<div class="container">
 						<h3>美食城</h3>
-						<div class="new-grids">
+                        <div class="new-grids">
 
 							<div class="col-md-6 new-grid" style="float:left; height: 375px;">
 									<a  class="mask">
@@ -182,7 +93,7 @@
 					</div>
 				</div>
 
-				<div class="content">
+<div class="content">
 			<div class="Sharing">
 				<div class="container">
 					<div class="sharing-grids">
@@ -199,8 +110,8 @@
 					</div>
 				</div>
 			</div>
-
-				<div class="content">
+                </div>
+<div class="content">
 			<div class="Sharing">
 				<div class="container">
 					<div class="sharing-grids">
@@ -217,8 +128,8 @@
 					</div>
 				</div>
 			</div>
-
-				<div class="content">
+                </div>
+<div class="content">
 			<div class="Sharing">
 				<div class="container">
 					<div class="sharing-grids">
@@ -235,8 +146,8 @@
 					</div>
 				</div>
 			</div>
-
-				<div class="content">
+                </div>
+<div class="content">
 			<div class="Sharing">
 				<div class="container">
 					<div class="sharing-grids">
@@ -254,82 +165,9 @@
 				</div>
 			</div>
 
+                </div>
+
+{% endblock %}
 
 
-	<footer id="gtco-footer " role="contentinfo ">
-		<div class="gtco-container ">
-			<div class="row row-p b-md ">
 
-				<div class="col-md-4 ">
-					<div class="gtco-widget ">
-						<h3>关于权益</h3>
-						<p>我们是武汉大学国际软件学院学生会下属权益部，我们的心愿是————世界和平。</p>
-					</div>
-				</div>
-
-				<div class="col-md-4 col-md-push-1 ">
-					<div class="gtco-widget ">
-						<h3>相关链接</h3>
-						<ul class="gtco-footer-links ">
-							<li><a href="http://www.whu.edu.cn/ ">武汉大学</a></li>
-							<li><a href="http://iss.whu.edu.cn/ ">武大国际软件学院</a></li>
-							<li><a href="http://yx.whu.edu.cn/ ">武大迎新网</a></li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="col-md-4 ">
-					<div class="gtco-widget ">
-						<h3>联系我们</h3>
-						<ul class="gtco-quick-contact ">
-							<li><a href="https://mail.qq.com/cgi-bin/loginpage?autologin=n&errtype=1&clientuin=2810601295&param=&sp=&tfcont=22%20serialization%3A%3Aarchive%205%200%200%204%200%200%200%208%20authtype%201%204%209%20clientuin%2010%202810601295%206%20domain%206%20qq.com%202%20vm%203%20wsk&r=21cc9e48b5c11805d738133739da30a8
-            "><i class="icon-mail2 "></i>2810601295@qq.com</a></li>
-							<li><a target="_blank " href="http://wpa.qq.com/msgrd?v=3&uin=2810601295&site=qq&menu=yes "><img border="0 " src="http://wpa.qq.com/pa?p=2:2810601295:52 " alt="欢迎联系国软权益 " title="欢迎联系国软权益 "/><i class="icon-mail2 "></i>QQ:2810601295</a></li>
-						</ul>
-					</div>
-				</div>
-
-			</div>
-
-			<div class="row copyright ">
-				<div class="col-md-12 ">
-					<p class="pull-left ">
-						<small class="block ">&copy; 2016 国软权益. All Rights Reserved.</small>
-					</p>
-					<p class="pull-right ">
-						<ul class="gtco-social-icons pull-right ">
-
-						</ul>
-					</p>
-				</div>
-			</div>
-
-		</div>
-	</footer>
-	</div>
-
-	<div class="gototop js-top ">
-		<a href="# " class="js-gotop "><i class="icon-arrow-up "></i></a>
-	</div>
-
-	<!-- jQuery -->
-	<script src="/static/js/jquery.min.js "></script>
-	<!-- jQuery Easing -->
-	<script src="/static/js/jquery.easing.1.3.js "></script>
-	<!-- Bootstrap -->
-	<script src="/static/js/bootstrap.min.js "></script>
-	<!-- Waypoints -->
-	<script src="/static/js/jquery.waypoints.min.js "></script>
-	<!-- Carousel -->
-	<script src="/static/js/owl.carousel.min.js "></script>
-	<!-- countTo -->
-	<script src="/static/js/jquery.countTo.js "></script>
-
-	<!-- Magnific Popup -->
-	<script src="/static/js/jquery.magnific-popup.min.js "></script>
-	<script src="/static/js/magnific-popup-options.js "></script>
-	<!-- Main -->
-	<script src="/static/js/main.js "></script>
-
-	</body>
-</html>
